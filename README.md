@@ -1,6 +1,8 @@
-# Tuesday Heartbreak
+# Arthera Next.js Boilerplate
 
-A variant of [Nexth](https://github.com/wslyvh/nexth/), a boilerplate built by [wslyvh](https://github.com/wslyvh) and [others](https://github.com/wslyvh/nexth/graphs/contributors).
+A variant of [Nexth](https://github.com/wslyvh/nexth/) boilerplate for hackathons and quick prototyping.
+
+View the [live demo](https://arthera-nextjs-boilerplate.netlify.app).
 
 ## Features
 
@@ -11,6 +13,7 @@ A variant of [Nexth](https://github.com/wslyvh/nexth/), a boilerplate built by [
 - [wagmi](https://wagmi.sh/)
 - [Web3Modal SDK from WalletConnect](https://docs.walletconnect.com/)
 - [Sign-In with Ethereum](https://www.login.xyz/)
+- [Gitcoin Passport](https://docs.passport.gitcoin.co/)
 - [usehooks-ts](https://usehooks-ts.com/)
 - [next-SEO](https://github.com/garmeeh/next-seo)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -44,11 +47,18 @@ pnpm dev
 pnpm build
 ```
 
-## Versions
+## Arthera faucet
 
-- Node [v18.17.1](https://nodejs.org/uk/blog/release/v18.17.1/)
-- PNPM [v8.7.5](https://pnpm.io/pnpm-vs-npm)
+You can get a handful of Testnet AA, the native currency of Arthera at [https://faucet.arthera.net/](https://faucet.arthera.net/).
+
+## Gitcoin passport
+
+If you want to use Gitcoin Passport, uncomment line 26 in the `components/layout/Header.tsx` file.
 
 ## Support
 
 You can contact me via [Element](https://matrix.to/#/@julienbrg:matrix.org), [Telegram](https://t.me/julienbrg), [Twitter](https://twitter.com/julienbrg), [Discord](https://discord.gg/uSxzJp3J76), or [LinkedIn](https://www.linkedin.com/in/julienberanger/).
+
+## Credits
+
+[Nexth](https://github.com/wslyvh/nexth/) boilerplate was built by [wslyvh](https://github.com/wslyvh) and [others](https://github.com/wslyvh/nexth/graphs/contributors).
