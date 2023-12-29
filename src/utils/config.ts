@@ -2,7 +2,7 @@ import { ThemingProps } from '@chakra-ui/react'
 import { Chain } from '@wagmi/core'
 
 export const SITE_NAME = 'Arthera Next.js Boilerplate'
-export const SITE_DESCRIPTION = 'A variant of Nexth boilerplate for hackathons and quick prototyping.'
+export const SITE_DESCRIPTION = 'A variant of Nexth boilerplate for hackathons and quick prototyping.' // Your description should be between 55 and 200 characters long, with a maximum of 300.
 export const SITE_URL = 'arthera-nextjs-boilerplate.netlify.app'
 
 export const THEME_INITIAL_COLOR = 'system'

@@ -27,10 +27,7 @@ export default function Home() {
       }
     }
     init()
-    console.log('isConnected:', isConnected)
-    console.log('network:', chain?.name)
-    console.log('signer:', signer)
-    console.log('provider:', provider)
+    console.log('Contract address:', NFT_CONTRACT_ADDRESS)
   }, [signer])
 
   const mint = async () => {
@@ -51,7 +48,7 @@ export default function Home() {
       setTxHash('')
       setTxLink('')
       const nft = new ethers.Contract(NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI, signer)
-      const call = await nft.safeMint(signer.address)
+      const call = await nft.safeMint(signer?.address)
       const receipt = await call.wait()
       console.log('tx:', receipt)
       setTxHash(receipt.hash)
@@ -88,7 +85,7 @@ export default function Home() {
       <main>
         <HeadingComponent as="h2">Hi there! 👋</HeadingComponent>
         <Button
-          mt={4}
+          mt={7}
           colorScheme="blue"
           variant="outline"
           type="submit"
