@@ -2,7 +2,8 @@
 
 A variant of [Nexth](https://github.com/wslyvh/nexth/) boilerplate for hackathons and quick prototyping.
 
-View the [live demo](https://w3hc-nextjs-boilerplate.netlify.app).
+- [live demo](https://w3hc-nextjs-boilerplate.netlify.app)
+- [Solidity Contracts](https://github.com/w3hc/w3hc-hardhat-template)
 
 ## Features
 
