@@ -5,7 +5,7 @@ import { LinkComponent } from 'components/layout/LinkComponent'
 import { useState, useEffect } from 'react'
 import { useAccount, useNetwork, useSwitchNetwork } from 'wagmi'
 import { ethers } from 'ethers'
-import { NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI } from '../utils/nft'
+import { ERC20_CONTRACT_ADDRESS, ERC20_CONTRACT_ABI } from '../utils/erc20'
 import { useEthersSigner, useEthersProvider } from '../hooks/ethersAdapter'
 
 export default function Home() {
@@ -22,12 +22,12 @@ export default function Home() {
 
   useEffect(() => {
     const init = async () => {
-      if (chain?.id !== 10243) {
-        switchNetwork?.(10243)
+      if (chain?.id !== 11155111) {
+        switchNetwork?.(11155111)
       }
     }
     init()
-    console.log('Contract address:', NFT_CONTRACT_ADDRESS)
+    console.log('Contract address:', ERC20_CONTRACT_ADDRESS)
   }, [signer])
 
   const mint = async () => {
@@ -47,16 +47,16 @@ export default function Home() {
       setIsLoading(true)
       setTxHash('')
       setTxLink('')
-      const nft = new ethers.Contract(NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI, signer)
-      const call = await nft.safeMint(signer?.address)
+      const erc20 = new ethers.Contract(ERC20_CONTRACT_ADDRESS, ERC20_CONTRACT_ABI, signer)
+      const call = await erc20.mint(ethers.parseEther('10000'))
       const receipt = await call.wait()
       console.log('tx:', receipt)
       setTxHash(receipt.hash)
-      setTxLink('https://explorer-test.arthera.net/tx/' + receipt.hash)
+      setTxLink('https://sepolia.etherscan.io/tx/' + receipt.hash)
       setIsLoading(false)
       toast({
         title: 'Successful mint',
-        description: 'Congrats, your NFT was minted! 🎉',
+        description: 'Congrats, 10,000 BASIC tokens were minted and sent to your wallet! 🎉',
         status: 'success',
         position: 'bottom',
         variant: 'subtle',
