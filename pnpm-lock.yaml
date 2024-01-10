@@ -12,10 +12,10 @@ dependencies:
     specifier: 2.4.4
     version: 2.4.4(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.0.26)(framer-motion@8.5.5)(react-dom@18.2.0)(react@18.2.0)
   '@emotion/react':
-    specifier: ^11
+    specifier: ^11.11.1
     version: 11.11.1(@types/react@18.0.26)(react@18.2.0)
   '@emotion/styled':
-    specifier: ^11
+    specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.0.26)(react@18.2.0)
   '@next/font':
     specifier: 13.1.1
@@ -24,16 +24,16 @@ dependencies:
     specifier: ^1.4.12
     version: 1.4.12(@types/react@18.0.26)(react@18.2.0)(typescript@5.3.3)(viem@1.20.0)
   '@web3modal/wagmi':
-    specifier: ^3.0.2
+    specifier: ^3.5.0
     version: 3.5.0(@types/react@18.0.26)(@wagmi/core@1.4.12)(typescript@5.3.3)(viem@1.20.0)
   dayjs:
-    specifier: ^1.11.7
+    specifier: ^1.11.10
     version: 1.11.10
   ethers:
-    specifier: ^6.7.1
+    specifier: ^6.9.0
     version: 6.9.0
   framer-motion:
-    specifier: ^8.0.2
+    specifier: ^8.5.5
     version: 8.5.5(react-dom@18.2.0)(react@18.2.0)
   iron-session:
     specifier: ^6.3.1
@@ -51,7 +51,7 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   react-icons:
-    specifier: ^4.7.1
+    specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
   siwe:
     specifier: ^2.1.4
@@ -60,15 +60,15 @@ dependencies:
     specifier: ^2.9.1
     version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
   viem:
-    specifier: ^1.12.2
+    specifier: ^1.20.0
     version: 1.20.0(typescript@5.3.3)(zod@3.22.4)
   wagmi:
-    specifier: ^1.4.2
+    specifier: ^1.4.12
     version: 1.4.12(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(viem@1.20.0)
 
 devDependencies:
   '@tsconfig/next':
-    specifier: ^1.0.4
+    specifier: ^1.0.5
     version: 1.0.5
   '@types/node':
     specifier: 18.11.18
@@ -89,22 +89,22 @@ devDependencies:
     specifier: 13.1.1
     version: 13.1.1(eslint@8.30.0)(typescript@5.3.3)
   eslint-config-prettier:
-    specifier: ^8.5.0
+    specifier: ^8.10.0
     version: 8.10.0(eslint@8.30.0)
   eslint-plugin-prettier:
     specifier: ^4.2.1
     version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.30.0)(prettier@2.8.8)
   husky:
-    specifier: ^8.0.2
+    specifier: ^8.0.3
     version: 8.0.3
   lint-staged:
-    specifier: ^13.1.0
+    specifier: ^13.3.0
     version: 13.3.0
   prettier:
-    specifier: ^2.8.1
+    specifier: ^2.8.8
     version: 2.8.8
   typescript:
-    specifier: ^5.2.2
+    specifier: ^5.3.3
     version: 5.3.3
 
 packages:
@@ -2053,6 +2053,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     bundledDependencies:
       - napi-wasm
 
@@ -2612,96 +2613,85 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vue/compiler-core@3.3.12:
-    resolution: {integrity: sha512-qAtjyG3GBLG0chzp5xGCyRLLe6wFCHmjI82aGzwuGKyznNP+GJJMxjc0wOYWDB2YKfho7niJFdoFpo0CZZQg9w==}
+  /@vue/compiler-core@3.4.7:
+    resolution: {integrity: sha512-hhCaE3pTMrlIJK7M/o3Xf7HV8+JoNTGOQ/coWS+V+pH6QFFyqtoXqQzpqsNp7UK17xYKua/MBiKj4e1vgZOBYw==}
     requiresBuild: true
     dependencies:
       '@babel/parser': 7.23.6
-      '@vue/shared': 3.3.12
+      '@vue/shared': 3.4.7
+      entities: 4.5.0
       estree-walker: 2.0.2
       source-map-js: 1.0.2
     dev: false
 
-  /@vue/compiler-dom@3.3.12:
-    resolution: {integrity: sha512-RdJU9oEYaoPKUdGXCy0l+i4clesdDeLmbvRlszoc9iagsnBnMmQtYfCPVQ5BHB6o7K4SCucDdJM2Dh3oXB0D6g==}
+  /@vue/compiler-dom@3.4.7:
+    resolution: {integrity: sha512-qDKBAIurCTub4n/6jDYkXwgsFuriqqmmLrIq1N2QDfYJA/mwiwvxi09OGn28g+uDdERX9NaKDLji0oTjE3sScg==}
     requiresBuild: true
     dependencies:
-      '@vue/compiler-core': 3.3.12
-      '@vue/shared': 3.3.12
+      '@vue/compiler-core': 3.4.7
+      '@vue/shared': 3.4.7
     dev: false
 
-  /@vue/compiler-sfc@3.3.12:
-    resolution: {integrity: sha512-yy5b9e7b79dsGbMmglCe/YnhCQgBkHO7Uf6JfjWPSf2/5XH+MKn18LhzhHyxbHdJgnA4lZCqtXzLaJz8Pd8lMw==}
+  /@vue/compiler-sfc@3.4.7:
+    resolution: {integrity: sha512-Gec6CLkReVswDYjQFq79O5rktri4R7TsD/VPCiUoJw40JhNNxaNJJa8mrQrWoJluW4ETy6QN0NUyC/JO77OCOw==}
     requiresBuild: true
     dependencies:
       '@babel/parser': 7.23.6
-      '@vue/compiler-core': 3.3.12
-      '@vue/compiler-dom': 3.3.12
-      '@vue/compiler-ssr': 3.3.12
-      '@vue/reactivity-transform': 3.3.12
-      '@vue/shared': 3.3.12
+      '@vue/compiler-core': 3.4.7
+      '@vue/compiler-dom': 3.4.7
+      '@vue/compiler-ssr': 3.4.7
+      '@vue/shared': 3.4.7
       estree-walker: 2.0.2
       magic-string: 0.30.5
-      postcss: 8.4.32
+      postcss: 8.4.33
       source-map-js: 1.0.2
     dev: false
 
-  /@vue/compiler-ssr@3.3.12:
-    resolution: {integrity: sha512-adCiMJPznfWcQyk/9HSuXGja859IaMV+b8UNSVzDatqv7h0PvT9BEeS22+gjkWofDiSg5d78/ZLls3sLA+cn3A==}
+  /@vue/compiler-ssr@3.4.7:
+    resolution: {integrity: sha512-PvYeSOvnCkST5mGS0TLwEn5w+4GavtEn6adcq8AspbHaIr+mId5hp7cG3ASy3iy8b+LuXEG2/QaV/nj5BQ/Aww==}
     requiresBuild: true
     dependencies:
-      '@vue/compiler-dom': 3.3.12
-      '@vue/shared': 3.3.12
+      '@vue/compiler-dom': 3.4.7
+      '@vue/shared': 3.4.7
     dev: false
 
-  /@vue/reactivity-transform@3.3.12:
-    resolution: {integrity: sha512-g5TijmML7FyKkLt6QnpqNmA4KD7K/T5SbXa88Bhq+hydNQEkzA8veVXWAQuNqg9rjaFYD0rPf0a9NofKA0ENgg==}
+  /@vue/reactivity@3.4.7:
+    resolution: {integrity: sha512-F539DO0ogH0+L8F9Pnw7cjqibcmSOh5UTk16u5f4MKQ8fraqepI9zdh+sozPX6VmEHOcjo8qw3Or9ZcFFw4SZA==}
     requiresBuild: true
     dependencies:
-      '@babel/parser': 7.23.6
-      '@vue/compiler-core': 3.3.12
-      '@vue/shared': 3.3.12
-      estree-walker: 2.0.2
-      magic-string: 0.30.5
+      '@vue/shared': 3.4.7
     dev: false
 
-  /@vue/reactivity@3.3.12:
-    resolution: {integrity: sha512-vOJORzO8DlIx88cgTnMLIf2GlLYpoXAKsuoQsK6SGdaqODjxO129pVPTd2s/N/Mb6KKZEFIHIEwWGmtN4YPs+g==}
+  /@vue/runtime-core@3.4.7:
+    resolution: {integrity: sha512-QMMsWRQaD3BpGyjjChthpl4Mji4Fjx1qfdufsXlDkKU3HV+hWNor2z+29F+E1MmVcP0ZfRZUfqYgtsQoL7IGwQ==}
     requiresBuild: true
     dependencies:
-      '@vue/shared': 3.3.12
+      '@vue/reactivity': 3.4.7
+      '@vue/shared': 3.4.7
     dev: false
 
-  /@vue/runtime-core@3.3.12:
-    resolution: {integrity: sha512-5iL4w7MZrSGKEZU2wFAYhDZdZmgn+s//73EfgDXW1M+ZUOl36md7tlWp1QFK/ladiq4FvQ82shVjo0KiPDPr0A==}
+  /@vue/runtime-dom@3.4.7:
+    resolution: {integrity: sha512-XwegyUY1rw8zxsX1Z36vwYcqo+uOgih5ti7y9vx+pPFhNdSQmN4LqK2RmSeAJG1oKV8NqSUmjpv92f/x6h0SeQ==}
     requiresBuild: true
     dependencies:
-      '@vue/reactivity': 3.3.12
-      '@vue/shared': 3.3.12
-    dev: false
-
-  /@vue/runtime-dom@3.3.12:
-    resolution: {integrity: sha512-8mMzqiIdl+IYa/OXwKwk6/4ebLq7cYV1pUcwCSwBK2KerUa6cwGosen5xrCL9f8o2DJ9TfPFwbPEvH7OXzUpoA==}
-    requiresBuild: true
-    dependencies:
-      '@vue/runtime-core': 3.3.12
-      '@vue/shared': 3.3.12
+      '@vue/runtime-core': 3.4.7
+      '@vue/shared': 3.4.7
       csstype: 3.1.3
     dev: false
 
-  /@vue/server-renderer@3.3.12(vue@3.3.12):
-    resolution: {integrity: sha512-OZ0IEK5TU5GXb5J8/wSplyxvGGdIcwEmS8EIO302Vz8K6fGSgSJTU54X0Sb6PaefzZdiN3vHsLXO8XIeF8crQQ==}
+  /@vue/server-renderer@3.4.7(vue@3.4.7):
+    resolution: {integrity: sha512-3bWnYLEkLLhkDWqvNk7IvbQD4UcxvFKxELBiOO2iG3m6AniFIsBWfHOO5tLVQnjdWkODu4rq0GipmfEenVAK5Q==}
     requiresBuild: true
     peerDependencies:
-      vue: 3.3.12
+      vue: 3.4.7
     dependencies:
-      '@vue/compiler-ssr': 3.3.12
-      '@vue/shared': 3.3.12
-      vue: 3.3.12(typescript@5.3.3)
+      '@vue/compiler-ssr': 3.4.7
+      '@vue/shared': 3.4.7
+      vue: 3.4.7(typescript@5.3.3)
     dev: false
 
-  /@vue/shared@3.3.12:
-    resolution: {integrity: sha512-6p0Yin0pclvnER7BLNOQuod9Z+cxSYh8pSh7CzHnWNjAIP6zrTlCdHRvSCb1aYEx6i3Q3kvfuWU7nG16CgG1ag==}
+  /@vue/shared@3.4.7:
+    resolution: {integrity: sha512-G+i4glX1dMJk88sbJEcQEGWRQnVm9eIY7CcQbO5dpdsD9SF8jka3Mr5OqZYGjczGN1+D6EUwdu6phcmcx9iuPA==}
     requiresBuild: true
     dev: false
 
@@ -3308,6 +3298,14 @@ packages:
       dayjs: 1.11.10
     dev: false
 
+  /@web3modal/common@3.5.5:
+    resolution: {integrity: sha512-RSzq8cJshm4cgAcawksWy7tkVCkvORxm95Ee6Po9G1vSb4+WCJFhzvbQIW4AAEstSNszm76qIH8rZAtOAj2Lyw==}
+    requiresBuild: true
+    dependencies:
+      dayjs: 1.11.10
+    dev: false
+    optional: true
+
   /@web3modal/core@3.5.0(@types/react@18.0.26)(react@18.2.0):
     resolution: {integrity: sha512-yZFk4YZDcmOhRyKkQYP0xdxK3JfdVwayive6UyBRY1bOxl4V4PAs+vRNLNY/3LulMMpqaHZGuD1zty1GXJ7INA==}
     dependencies:
@@ -3318,11 +3316,32 @@ packages:
       - react
     dev: false
 
+  /@web3modal/core@3.5.5(@types/react@18.0.26)(react@18.2.0):
+    resolution: {integrity: sha512-UZ+pHRYE/cFBZMRzGshwMoJZMY/Mz3si0pb2Ob33MmI06Fa5BnO8bJpiTIfHY2V0+IJ+EPtW+PjeatfkXHxccA==}
+    requiresBuild: true
+    dependencies:
+      '@web3modal/common': 3.5.5
+      '@web3modal/wallet': 3.5.5
+      valtio: 1.11.2(@types/react@18.0.26)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+    dev: false
+    optional: true
+
   /@web3modal/polyfills@3.5.0:
     resolution: {integrity: sha512-QxVgUd+GKENGLo84bNTXjHk78l61Yr65LLvq5GPQWwrIPWFDqP2Nf7ixtaI36tTx29VN2SVyzBXGMhtrL73ZTg==}
     dependencies:
       buffer: 6.0.3
     dev: false
+
+  /@web3modal/polyfills@3.5.5:
+    resolution: {integrity: sha512-ovMPV12Z53eoIivecQ6VrtqSbmC3K1qES69nDVOGmZTZTwLcb+GSNfH2SRtn/l2tpCtkCNcu14rnbzZ1vEKcYQ==}
+    requiresBuild: true
+    dependencies:
+      buffer: 6.0.3
+    dev: false
+    optional: true
 
   /@web3modal/scaffold-react@3.5.0(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-4F4QkUMa3VFcmbP2gYOQ+h4x23EFa13BcWEZepQ47q9HbW/sL3zLmS7k44EpyhLMSEX4HrPHXiUlGTr9rK038g==}
@@ -3347,13 +3366,26 @@ packages:
       - react
     dev: false
 
-  /@web3modal/scaffold-vue@3.5.0(@types/react@18.0.26)(react@18.2.0)(vue@3.3.12):
+  /@web3modal/scaffold-utils@3.5.5(@types/react@18.0.26)(react@18.2.0):
+    resolution: {integrity: sha512-nKfTbfRp64n7SgFl9aGSBZvV9jlqRodmeWpKfghoqD347Gm16T0nXab/IMou5xqbPX9UImUiD/zSG/LMdsLxiQ==}
+    requiresBuild: true
+    dependencies:
+      '@web3modal/polyfills': 3.5.5
+      '@web3modal/scaffold': 3.5.5(@types/react@18.0.26)(react@18.2.0)
+      valtio: 1.11.2(@types/react@18.0.26)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+    dev: false
+    optional: true
+
+  /@web3modal/scaffold-vue@3.5.0(@types/react@18.0.26)(react@18.2.0)(vue@3.4.7):
     resolution: {integrity: sha512-babm6SpuOeYxyTfdg9v603lYCrOFbFg1Y8KHTCAISu3Tk4GEnJ99wQVUE1ujX2CHoLU8GvAeyVKszJniKyPaJQ==}
     peerDependencies:
       vue: '>=3'
     dependencies:
       '@web3modal/scaffold': 3.5.0(@types/react@18.0.26)(react@18.2.0)
-      vue: 3.3.12(typescript@5.3.3)
+      vue: 3.4.7(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -3370,8 +3402,22 @@ packages:
       - react
     dev: false
 
-  /@web3modal/siwe@3.5.0(@types/react@18.0.26)(typescript@5.3.3):
-    resolution: {integrity: sha512-i9AvSH3uA93lu7z79d90aMaHx3Kn/EhblRJa2NOykADuAZX3UeXkX9KX7pkLVEYD1TkQN4mOHTFRQ6LeXq9EcA==}
+  /@web3modal/scaffold@3.5.5(@types/react@18.0.26)(react@18.2.0):
+    resolution: {integrity: sha512-qFNSkv0zqazo2WXFqNdN1bIOnjhGv3eoD/HzEDgV1a6VIyLzLoFdXexDX+06ey1FAtMQRml/F2yVTZskln5taA==}
+    requiresBuild: true
+    dependencies:
+      '@web3modal/common': 3.5.5
+      '@web3modal/core': 3.5.5(@types/react@18.0.26)(react@18.2.0)
+      '@web3modal/ui': 3.5.5
+      lit: 3.1.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+    dev: false
+    optional: true
+
+  /@web3modal/siwe@3.5.5(@types/react@18.0.26)(typescript@5.3.3):
+    resolution: {integrity: sha512-8yNE7JX9+gDjozvN9cCUqcjBgsdxgQ9YzYyxujIfMrBOJ9v3HdbF/3whmsyaMzSv+NNtiDUCufBW30/4zz5Wnw==}
     requiresBuild: true
     peerDependenciesMeta:
       react:
@@ -3381,12 +3427,12 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@web3modal/core': 3.5.0(@types/react@18.0.26)(react@18.2.0)
-      '@web3modal/scaffold-utils': 3.5.0(@types/react@18.0.26)(react@18.2.0)
+      '@web3modal/core': 3.5.5(@types/react@18.0.26)(react@18.2.0)
+      '@web3modal/scaffold-utils': 3.5.5(@types/react@18.0.26)(react@18.2.0)
     optionalDependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      vue: 3.3.12(typescript@5.3.3)
+      vue: 3.4.7(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/react'
       - typescript
@@ -3399,6 +3445,15 @@ packages:
       lit: 3.1.0
       qrcode: 1.5.3
     dev: false
+
+  /@web3modal/ui@3.5.5:
+    resolution: {integrity: sha512-rq8OzGzKDkuBlj26WFMk8IFdkb7Ryedn3aIDQupZsB55d3SUjDg8sBExsoR8I4NdtJjazGokthh4SkPOOO55nA==}
+    requiresBuild: true
+    dependencies:
+      lit: 3.1.0
+      qrcode: 1.5.3
+    dev: false
+    optional: true
 
   /@web3modal/wagmi@3.5.0(@types/react@18.0.26)(@wagmi/core@1.4.12)(typescript@5.3.3)(viem@1.20.0):
     resolution: {integrity: sha512-bQoytNkcVbjWfZsePKAv+XF9KDtDx1iqitoC4RPold9oB5RukEgGNHFQ7AcDKTwjkmiE3JqwyubQyvupZ2Z/Yg==}
@@ -3420,14 +3475,14 @@ packages:
       '@web3modal/scaffold': 3.5.0(@types/react@18.0.26)(react@18.2.0)
       '@web3modal/scaffold-react': 3.5.0(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0)
       '@web3modal/scaffold-utils': 3.5.0(@types/react@18.0.26)(react@18.2.0)
-      '@web3modal/scaffold-vue': 3.5.0(@types/react@18.0.26)(react@18.2.0)(vue@3.3.12)
+      '@web3modal/scaffold-vue': 3.5.0(@types/react@18.0.26)(react@18.2.0)(vue@3.4.7)
       '@web3modal/wallet': 3.5.0
       viem: 1.20.0(typescript@5.3.3)(zod@3.22.4)
     optionalDependencies:
-      '@web3modal/siwe': 3.5.0(@types/react@18.0.26)(typescript@5.3.3)
+      '@web3modal/siwe': 3.5.5(@types/react@18.0.26)(typescript@5.3.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      vue: 3.3.12(typescript@5.3.3)
+      vue: 3.4.7(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/react'
       - typescript
@@ -3438,6 +3493,14 @@ packages:
     dependencies:
       zod: 3.22.4
     dev: false
+
+  /@web3modal/wallet@3.5.5:
+    resolution: {integrity: sha512-RlbPtTxUQWe3HauHaj2hT3lIrmIfcWZwXG0tD2mM1sPbIrE9YaUkQwJnMyDPmOkFHsZkEZavulK4Sdxw7Mj3Lw==}
+    requiresBuild: true
+    dependencies:
+      zod: 3.22.4
+    dev: false
+    optional: true
 
   /@zag-js/element-size@0.1.0:
     resolution: {integrity: sha512-QF8wp0+V8++z+FHXiIw93+zudtubYszOtYbNgK39fg3pi+nCZtuSm4L1jC5QZMatNZ83MfOzyNCfgUubapagJQ==}
@@ -4264,6 +4327,12 @@ packages:
       graceful-fs: 4.2.11
       tapable: 2.2.1
     dev: true
+
+  /entities@4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+    engines: {node: '>=0.12'}
+    requiresBuild: true
+    dev: false
 
   /error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
@@ -6010,6 +6079,9 @@ packages:
     hasBin: true
     dev: false
 
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
+
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -6436,8 +6508,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /postcss@8.4.32:
-    resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
+  /postcss@8.4.33:
+    resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
     requiresBuild: true
     dependencies:
@@ -7510,8 +7582,8 @@ packages:
       - utf-8-validate
       - zod
 
-  /vue@3.3.12(typescript@5.3.3):
-    resolution: {integrity: sha512-jYNv2QmET2OTHsFzfWHMnqgCfqL4zfo97QwofdET+GBRCHhSCHuMTTvNIgeSn0/xF3JRT5OGah6MDwUFN7MPlg==}
+  /vue@3.4.7(typescript@5.3.3):
+    resolution: {integrity: sha512-4urmkWpudekq0CPNMO7p6mBGa9qmTXwJMO2r6CT4EzIJVG7WoSReiysiNb7OSi/WI113oX0Srn9Rz1k/DCXKFQ==}
     requiresBuild: true
     peerDependencies:
       typescript: '*'
@@ -7519,11 +7591,11 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@vue/compiler-dom': 3.3.12
-      '@vue/compiler-sfc': 3.3.12
-      '@vue/runtime-dom': 3.3.12
-      '@vue/server-renderer': 3.3.12(vue@3.3.12)
-      '@vue/shared': 3.3.12
+      '@vue/compiler-dom': 3.4.7
+      '@vue/compiler-sfc': 3.4.7
+      '@vue/runtime-dom': 3.4.7
+      '@vue/server-renderer': 3.4.7(vue@3.4.7)
+      '@vue/shared': 3.4.7
       typescript: 5.3.3
     dev: false
 
